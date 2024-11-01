@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Troubleshooting on amardeepsidhu.com</title><link>https://examplesite.com/tag/troubleshooting/</link><description>Recent content in Troubleshooting on amardeepsidhu.com</description><generator>Hugo -- 0.135.0</generator><language>en</language><lastBuildDate>Sat, 18 Nov 2017 16:26:02 +0530</lastBuildDate><atom:link href="https://examplesite.com/tag/troubleshooting/index.xml" rel="self" type="application/rss+xml"/><item><title>Garbled display while running FMW installer on Linux ashishb</title><link>https://examplesite.com/blog/garbled-display-while-running-fmw-installer-on-linux/</link><pubDate>Sat, 18 Nov 2017 10:56:02 +0000</pubDate><guid>https://examplesite.com/blog/garbled-display-while-running-fmw-installer-on-linux/</guid><description>&lt;p>A colleague faced this while running FMW installer on a Linux machine. The display appeared like this&lt;/p>
+&lt;p>&lt;a href="https://examplesite.com/blog/wp-content/uploads/2017/11/fmw_installer.jpg">&lt;img loading="lazy" src="https://examplesite.com/blog/wp-content/uploads/2017/11/fmw_installer.jpg" alt="" />
+&lt;/a>&lt;a href="https://stackoverflow.com/questions/46270769/weblogic-12c-12-1-3-installation-on-unix-garbled-character-in-gui-over-xming">This thread&lt;/a> gave a clue that it could have something to do with fonts. So I checked what all fonts related stuff was installed.&lt;/p>
+&lt;p>[bash][root@someserver ~]# rpm -aq |grep -i font
+stix-fonts-1.1.0-5.el7.noarch
+xorg-x11-font-utils-7.5-20.el7.x86_64
+xorg-x11-fonts-cyrillic-7.5-9.el7.noarch
+xorg-x11-fonts-ISO8859-1-75dpi-7.5-9.el7.noarch
+xorg-x11-fonts-ISO8859-9-100dpi-7.5-9.el7.noarch
+xorg-x11-fonts-ISO8859-9-75dpi-7.5-9.el7.noarch
+libXfont-1.5.2-1.el7.x86_64
+xorg-x11-fonts-ISO8859-14-100dpi-7.5-9.el7.noarch
+xorg-x11-fonts-ISO8859-1-100dpi-7.5-9.el7.noarch
+xorg-x11-fonts-75dpi-7.5-9.el7.noarch
+xorg-x11-fonts-ISO8859-2-100dpi-7.5-9.el7.noarch
+libfontenc-1.1.3-3.el7.x86_64
+xorg-x11-fonts-ethiopic-7.5-9.el7.noarch
+xorg-x11-fonts-100dpi-7.5-9.el7.noarch
+xorg-x11-fonts-misc-7.5-9.el7.noarch
+fontpackages-filesystem-1.44-8.el7.noarch
+fontconfig-2.10.95-11.el7.x86_64
+xorg-x11-fonts-ISO8859-2-75dpi-7.5-9.el7.noarch
+xorg-x11-fonts-ISO8859-14-75dpi-7.5-9.el7.noarch
+xorg-x11-fonts-Type1-7.5-9.el7.noarch
+xorg-x11-fonts-ISO8859-15-75dpi-7.5-9.el7.noarch
+[root@someserver ~]#[/bash]&lt;/p></description></item><item><title>Garbled display while running FMW installer on Linux gatsby</title><link>https://examplesite.com/blog3/garbled-display-while-running-fmw-installer-on-linux-gatsby/</link><pubDate>Sat, 18 Nov 2017 16:26:02 +0530</pubDate><guid>https://examplesite.com/blog3/garbled-display-while-running-fmw-installer-on-linux-gatsby/</guid><description>&lt;p>A colleague faced this while running FMW installer on a Linux machine. The display appeared like this&lt;/p>
+&lt;p>&lt;a href="http://amardeepsidhu.com/blog/wp-content/uploads/2017/11/fmw_installer.jpg">&lt;img loading="lazy" src="http://amardeepsidhu.com/blog/wp-content/uploads/2017/11/fmw_installer.jpg" alt="" />
+&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://stackoverflow.com/questions/46270769/weblogic-12c-12-1-3-installation-on-unix-garbled-character-in-gui-over-xming">This thread&lt;/a> gave a clue that it could have something to do with fonts. So I checked what all fonts related stuff was installed.&lt;/p>
+&lt;pre tabindex="0">&lt;code>&amp;lt;pre class=&amp;#34;brush: bash; title: ; notranslate&amp;#34; title=&amp;#34;&amp;#34;&amp;gt;[root@someserver ~]# rpm -aq |grep -i font
+stix-fonts-1.1.0-5.el7.noarch
+xorg-x11-font-utils-7.5-20.el7.x86_64
+xorg-x11-fonts-cyrillic-7.5-9.el7.noarch
+xorg-x11-fonts-ISO8859-1-75dpi-7.5-9.el7.noarch
+xorg-x11-fonts-ISO8859-9-100dpi-7.5-9.el7.noarch
+xorg-x11-fonts-ISO8859-9-75dpi-7.5-9.el7.noarch
+libXfont-1.5.2-1.el7.x86_64
+xorg-x11-fonts-ISO8859-14-100dpi-7.5-9.el7.noarch
+xorg-x11-fonts-ISO8859-1-100dpi-7.5-9.el7.noarch
+xorg-x11-fonts-75dpi-7.5-9.el7.noarch
+xorg-x11-fonts-ISO8859-2-100dpi-7.5-9.el7.noarch
+libfontenc-1.1.3-3.el7.x86_64
+xorg-x11-fonts-ethiopic-7.5-9.el7.noarch
+xorg-x11-fonts-100dpi-7.5-9.el7.noarch
+xorg-x11-fonts-misc-7.5-9.el7.noarch
+fontpackages-filesystem-1.44-8.el7.noarch
+fontconfig-2.10.95-11.el7.x86_64
+xorg-x11-fonts-ISO8859-2-75dpi-7.5-9.el7.noarch
+xorg-x11-fonts-ISO8859-14-75dpi-7.5-9.el7.noarch
+xorg-x11-fonts-Type1-7.5-9.el7.noarch
+xorg-x11-fonts-ISO8859-15-75dpi-7.5-9.el7.noarch
+[root@someserver ~]#
+&lt;/code>&lt;/pre>&lt;p>stix-fonts looked suspicious to me. So I removed that with rpm -e stix-fonts.&lt;/p></description></item><item><title>ORA-01422 while compiling objects</title><link>https://examplesite.com/blog1/2012/07/31/ora-01422-while-compiling-objects/</link><pubDate>Tue, 31 Jul 2012 22:04:28 +0530</pubDate><guid>https://examplesite.com/blog1/2012/07/31/ora-01422-while-compiling-objects/</guid><description>&lt;p>There was an interesting issue at one of the customer sites. Few tables in the database were altered and the dependent objects became invalid. But the attempts to compile the objects using utlrp.sql or manually were failing. In all the cases it was giving the same error:&lt;/p>
+&lt;pre tabindex="0">&lt;code>SQL&amp;gt; alter function SCOTT.SOME_FUNCTION compile;
+alter function SCOTT.SOME_FUNCTION compile
+*
+ERROR at line 1:
+ORA-00604: error occurred at recursive SQL level 1
+ORA-01422: exact fetch returns more than requested number of rows
+ORA-06512: at line 27
+SQL&amp;gt;
+&lt;/code>&lt;/pre>&lt;p>At first look it sounded like some issue with the dictionary as the error in case of every object (be it a view, function or package) was the same.&lt;/p></description></item></channel></rss>
